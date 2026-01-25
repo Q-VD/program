@@ -16,16 +16,18 @@
 
     <pre class="code-box"
       ><code>
-        led = 2;
+        led = 2; // hier definieer je een op welke plaats een led is aangesloten
+        
         void setup () {
-          pinMode(led, INPUT);
+          pinMode(led, OUTPUT); // hier zeg je of de led een input of een output is
         }
   
         void loop () {
-          digitalWrite(led, HIGH);
-          delay(10);
-          digitalWrite(led, LOW);
-          delay(10);
+          // hieronder een korte code die een led laat knipperen
+          digitalWrite(led, HIGH); // led aan
+          delay(10); // een wacht periode
+          digitalWrite(led, LOW); // led uit
+          delay(10); // wacht periode
         }
       </code>
     </pre>

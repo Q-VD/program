@@ -1,49 +1,135 @@
-/* Algemene pagina-instellingen */
+/* ================================
+   Basis reset & pagina-instellingen
+   ================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #4a90e2, #7b4397);
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-
-  min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #7b4397);
+    color: #ffffff;
+    overflow-y: auto;
 }
 
-/* Stijl van beide linkblokken */
+/* ================================
+   Algemene pagina container
+   ================================ */
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ================================
+   Tekst & headings
+   ================================ */
+
+h1, h2, h3 {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+p {
+    max-width: 900px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* ================================
+   Links als blokken (zoals je H1 links)
+   ================================ */
+
 a {
-  text-decoration: none;
-  margin: 20px 0;
+    text-decoration: none;
+    margin: 20px 0;
+    display: block;
 }
 
-/* Stijl van de H1 binnen de link */
 a h1 {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(6px);
-  padding: 20px 35px;
-  border-radius: 15px;
-  color: #ffffff;
-  font-size: 1.6rem;
-  text-align: center;
-  transition: 0.2s ease-in-out;
-  max-width: 600px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    padding: 20px 35px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    transition: 0.2s ease-in-out;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Hover effect */
 a h1:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: scale(1.05);
-  cursor: pointer;
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+    cursor: pointer;
 }
+
+/* ================================
+   Code blokken (multi-language)
+   ================================ */
 
 .code-box {
     width: 100%;
     max-width: 900px;
-    min-height: 300px;
+    min-height: 260px;
+    max-height: 520px;
+
+    margin: 24px auto;
     padding: 24px;
-    margin: 20px auto;
+
     background-color: #1e1e1e;
     color: #d4d4d4;
+
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: 15px;
+    line-height: 1.6;
+
+    border-radius: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ================================
+   Inline code (in tekst)
+   ================================ */
+
+code {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 2px 6px;
+    border-radius: 5px;
     font-family: Consolas, Monaco, monospace;
-    border-radius: 8px;
-    overflow: auto;
+}
+
+/* ================================
+   Responsiveness
+   ================================ */
+
+@media (max-width: 768px) {
+    .page {
+        padding: 30px 15px;
+    }
+
+    .code-box {
+        font-size: 14px;
+        min-height: 220px;
+    }
+
+    a h1 {
+        font-size: 1.4rem;
+        padding: 18px 28px;
+    }
 }

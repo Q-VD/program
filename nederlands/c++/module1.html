@@ -6,30 +6,32 @@
     <link rel="stylesheet" href="/program/style.css"/>
   </head>
   <body>
-    <h1>Intro</h1>
-    <span>Op deze pagina leggen wij c++ of beter bekend als de code taal van arduino uit.</span>
-    <h1>Basis</h1>
-    <span>Elke code van C++ bestaat uit 3 hoofddelen:</span>
-    <p>1.   Definities: Hier defininieer je alle variabel, in- en uitgangen en je gebruikte bibliotheken.</p>
-    <p>2.   Setup: Hier komt de code die 1 keer wordt uitgevoerd.</p>
-    <p>3.   Loop: De code die in dit gedeelte staat wordt constant herhaald.</p>
-
-    <pre class="code-box"
-      ><code>
-        led = 2; // hier definieer je een op welke plaats een led is aangesloten
-        
-        void setup () {
-          pinMode(led, OUTPUT); // hier zeg je of de led een input of een output is
-        }
+    <div class="page">
+      <h1>Intro</h1>
+      <span>Op deze pagina leggen wij c++ of beter bekend als de code taal van arduino uit.</span>
+      <h1>Basis</h1>
+      <span>Elke code van C++ bestaat uit 3 hoofddelen:</span>
+      <p>1.   Definities: Hier defininieer je alle variabel, in- en uitgangen en je gebruikte bibliotheken.</p>
+      <p>2.   Setup: Hier komt de code die 1 keer wordt uitgevoerd.</p>
+      <p>3.   Loop: De code die in dit gedeelte staat wordt constant herhaald.</p>
   
-        void loop () {
-          // hieronder een korte code die een led laat knipperen
-          digitalWrite(led, HIGH); // led aan
-          delay(10); // een wacht periode
-          digitalWrite(led, LOW); // led uit
-          delay(10); // wacht periode
-        }
-      </code>
-    </pre>
+      <pre class="code-box"
+        ><code>
+          led = 2; // hier definieer je een op welke plaats een led is aangesloten
+          
+          void setup () {
+            pinMode(led, OUTPUT); // hier zeg je of de led een input of een output is
+          }
+    
+          void loop () {
+            // hieronder een korte code die een led laat knipperen
+            digitalWrite(led, HIGH); // led aan
+            delay(10); // een wacht periode
+            digitalWrite(led, LOW); // led uit
+            delay(10); // wacht periode
+          }
+        </code>
+      </pre>
+    </div>
   </body>
 </html>

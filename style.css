@@ -38,3 +38,14 @@ a h1:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+
+.code-box {
+  background-color: #1e1e1e;   /* donkere achtergrond */
+  color: #d4d4d4;              /* lichte tekst */
+  padding: 16px;
+  border-radius: 8px;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;            /* horizontaal scrollen bij lange regels */
+}

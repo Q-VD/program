@@ -40,12 +40,14 @@ a h1:hover {
 }
 
 .code-box {
-  background-color: #1e1e1e;   /* donkere achtergrond */
-  color: #d4d4d4;              /* lichte tekst */
-  padding: 16px;
-  border-radius: 8px;
-  font-family: Consolas, Monaco, "Courier New", monospace;
-  font-size: 14px;
-  line-height: 1.5;
-  overflow-x: auto;            /* horizontaal scrollen bij lange regels */
+    width: 100%;
+    max-width: 900px;
+    min-height: 300px;
+    padding: 24px;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: Consolas, Monaco, monospace;
+    border-radius: 8px;
+    overflow: auto;
 }

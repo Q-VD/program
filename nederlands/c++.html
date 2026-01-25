@@ -9,6 +9,25 @@
     <h1>Intro</h1>
     <span>Op deze pagina leggen wij c++ of beter bekend als de code taal van arduino uit.</span>
     <h1>Basis</h1>
-    <span>...</span>
+    <span>Elke code van C++ bestaat uit 3 hoofddelen:</span>
+    <p>1.   Definities: Hier defininieer je alle variabel, in- en uitgangen en je gebruikte bibliotheken.</p>
+    <p>2.   Setup: Hier komt de code die 1 keer wordt uitgevoerd.</p>
+    <p>3.   Loop: De code die in dit gedeelte staat wordt constant herhaald.</p>
+
+    <pre class="code-box"
+      ><code>
+        led = 2;
+        void setup () {
+          pinMode(led, INPUT);
+        }
+  
+        void loop () {
+          digitalWrite(led, HIGH);
+          delay(10);
+          digitalWrite(led, LOW);
+          delay(10);
+        }
+      </code>
+    </pre>
   </body>
 </html>

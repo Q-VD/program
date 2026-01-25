@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Module 1</title>
+    <link rel="stylesheet" href="/program/style.css"/>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Module 2</h1>
+      <span>Er bestaan meer dan miljoen verschillende componenten.</span>
+      <p>In deze module gaan we enkel de belangrijkste en de meest gebruikte componenten bespreken.</p>
+      <p>Hier moet ik wel een belangrijke opmerking bij maken, we bespreken enkel de componenten die invloed hebben op u code.</p>
+      <p>Een weerstand bijvoorbeeld zullen we dus niet bespreken, maar deze is wel belangrijk om een juiste schakeling te maken.</p>
+
+      <h1>Digitale componenten</h1>
+      <p>-  LED</p>
+      <p>-  knop</p>
+      <p>  -  drukknop</p>
+      <p>  -  schakelaar</p>
+
+      <h1>Analoge componenten</h1>
+      <p>-  Potentiometer</p>
+  
+      <pre class="code-box"
+        ><code>
+          led = 2; // hier definieer je een op welke plaats een led is aangesloten
+          
+          void setup () {
+            pinMode(led, OUTPUT); // hier zeg je of de led een input of een output is
+          }
+    
+          void loop () {
+            // hieronder een korte code die een led laat knipperen
+            digitalWrite(led, HIGH); // led aan
+            delay(10); // een wacht periode
+            digitalWrite(led, LOW); // led uit
+            delay(10); // wacht periode
+          }
+        </code>
+      </pre>
+
+      <p>Klaar met deze module?</p>
+      <p>Via volgende knop kan je doorgaan naar de volgende module of terug naar het overzicht gaan van alle modules.</p>
+      
+      <a href="/program/nederlands/c++/Module3.html" class="link-button">
+        <h3>Module 3</h3>
+      </a>
+
+      <a href="/program/nederlands/c++/index.html" class="link-button">
+        <h3>Modules</h3>
+      </a>
+    </div>
+  </body>
+</html>
